@@ -5,10 +5,16 @@ Repozitorij z gradivi pri predmetu APPR v študijskem letu 2019/20
 * [![Shiny](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/jaanos/APPR-2019-20/master?urlpath=shiny/APPR-2019-20/projekt.Rmd) Shiny
 * [![RStudio](http://mybinder.org/badge.svg)](http://mybinder.org/v2/gh/jaanos/APPR-2019-20/master?urlpath=rstudio) RStudio
 
-## Tematika
+## Analiza kazalnikov trajnostnega razvoja Slovenije
 
-Izbrali si boste temo, s katero se bo vaš projekt ukvarjal.
-Tukaj boste napisali, kje ste dobili podatke, ter kakšen je vaš cilj.
+V svojem projektu bom analiziral kazalnike trajnostnega razvoja. Tako kot 192 ostalih članic Združenih narodov se je tudi Slovenija zavzela, da se bo poskušala čim bolj približati 17 smernicam agende 2030. Sprva se bom osredotočil na ekonomsko rast po regijah in državni dolg Slovenije. V drugem delu bom obravnaval kakovost naravnih virov in intenzivnost porabe teh. Za konec pa si bom ogledal varnost v Sloveniji po regijah, skrb za vse generacije prav tako na regijski ravni ter vložke Slovenije v razvoj.
+
+## Cilj:
+
+Želim ponazoriti kako je Slovenija sčasoma izboljševala razmere v državi in v kakšni meri nam je uspelo narediti napredek v opazovanih elementih. Poskušal bom ugotoviti v katerih elementih nam je ze uspelo doseči smernice agande 2030 in v kaj moramo se vlagati.
+
+
+
 
 ## Program
 
