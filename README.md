@@ -11,9 +11,39 @@ V svojem projektu bom analiziral kazalnike trajnostnega razvoja. Tako kot 192 os
 
 ## Cilj:
 
-Želim ponazoriti kako je Slovenija sčasoma izboljševala razmere v državi in v kakšni meri nam je uspelo narediti napredek v opazovanih elementih. Poskušal bom ugotoviti v katerih elementih nam je ze uspelo doseči smernice agande 2030 in v kaj moramo se vlagati.
+Želim ponazoriti kako je Slovenija sčasoma izboljševala razmere v državi in v kakšni meri nam je uspelo narediti napredek v opazovanih elementih. Poskušal bom ugotoviti v katerih elementih nam je že uspelo doseči smernice agande 2030 in v kaj moramo še vlagati.
 
+## Povezave do tabel na SURS-u
 
+* 1.tabela Regionalni bruto domači proizvod na prebivalca, statistična regija, leto
+https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__32_trajnostni_razvoj__05_blaginja__10_32687_ekonomska_rast/3268704S.px/table/tableViewLayout2/
+
+* 2.tabela Dolg sektorja država, leto
+https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__32_trajnostni_razvoj__15_medgenerac_sodelovanje__10_32693_drzavni_dolg/3269302S.px/table/tableViewLayout2/
+
+* 3.tabela Povprečna letna koncentracija delcev PM10, merilno mesto, leto
+https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__32_trajnostni_razvoj__05_blaginja__05_32686_kakovost_nar_virov/3268602S.px/table/tableViewLayout2/
+
+* 4.tabela Delež neskladnih vzorcev zaradi onesnaženosti pitne vode z E.coli, oskrbovalna območja, leto
+https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__32_trajnostni_razvoj__05_blaginja__05_32686_kakovost_nar_virov/3268604S.px/table/tableViewLayout2/
+
+* 5.tabela Delež kmetijskih zemljišč v uporabi z ekološko pridelavo, leto
+https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__32_trajnostni_razvoj__05_blaginja__05_32686_kakovost_nar_virov/3268606S.px/table/tableViewLayout2/
+
+* 6.tabela Intenzivnost rabe naravnih virov, leto
+https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__32_trajnostni_razvoj__15_medgenerac_sodelovanje__05_32692_intenz_rabe_nar_virov/3269202S.px/table/tableViewLayout2/
+
+* 7.tabela Kazalniki varnosti, statistična regija, leto
+https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__32_trajnostni_razvoj__05_blaginja__15_32688_varnost/3268803S.px/table/tableViewLayout2/
+
+* 8.tabela Kazalniki skrbi za vse generacije, statistična regija, leto
+https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__32_trajnostni_razvoj__15_medgenerac_sodelovanje__15_32694_skrb_vse_generacije/3269404S.px/table/tableViewLayout2/
+
+* 9.tabela Kazalniki vlaganja v razvoj, statistična regija, vir financiranja, leto
+https://pxweb.stat.si/SiStatDb/pxweb/sl/30_Okolje/30_Okolje__32_trajnostni_razvoj__10_ravnovesje_skromnost__10_32690_raziskave_razvoj/3269004S.px/table/tableViewLayout2/
+
+* Agenda 2030 cilji
+https://www.un.org/sustainabledevelopment/development-agenda/
 
 
 ## Program
