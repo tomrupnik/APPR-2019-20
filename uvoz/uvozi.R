@@ -4,15 +4,14 @@ library(readr)
 
 
 
-drzavni_dolg <- read_csv2("podatki/DRZAVNI DOLG.csv",col_names=c("Leto", "Dolg_BDP") , skip=1,
+drzavni_dolg <- read_csv2("podatki/DRZAVNI DOLG.csv",col_names=c("Leto", "Dolg_bdp") , skip=1,
                       locale=locale( encoding="Windows-1250"))
 
 bdp <- read_csv2("podatki/BDP.csv",col_names=c("Regija","Leto","Vrednost") , skip=1,
                  locale=locale( encoding="Windows-1250"))
 
-kakovost_zraka <- read_csv2("podatki/KAKOVOST ZRAKA.csv",col_names=c("Merilno mesto","Povprečna letna koncentracija delcev PM10 [µg/m3]",
-                                                                     "Število dni s preseženo dnevno mejno koncentracijo delcev PM10 [število]"),
-                            skip=1, na="...", locale=locale( encoding="Windows-1250"))
+kakovost_zraka <- read_csv2("podatki/KAKOVOST ZRAKA.csv",col_names=c("Regija","Leto","Vrednost") , skip=1, na="...",
+                            locale=locale( encoding="Windows-1250"))
 kakovost_zraka[is.na(x = kakovost_zraka)] <- " "
 
 kakovost_vode <- read_csv2("podatki/KAKOVOST VODE.csv",col_names=c("Oskrbovalno obmocje","Leto","Vrednost") , skip=1,
