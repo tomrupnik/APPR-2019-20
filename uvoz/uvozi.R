@@ -4,7 +4,7 @@ library(readr)
 
 
 
-drzavni_dolg <- read_csv2("podatki/DRZAVNI DOLG.csv",col_names=c("Leto", "Dolg BDP[%]") , skip=1,
+drzavni_dolg <- read_csv2("podatki/DRZAVNI DOLG.csv",col_names=c("Leto", "Dolg_BDP[%]") , skip=1,
                       locale=locale( encoding="Windows-1250"))
 
 bdp <- read_csv2("podatki/BDP.csv",col_names=c("Regija","Leto","Vrednost") , skip=1,
