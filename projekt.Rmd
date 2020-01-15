@@ -24,55 +24,70 @@ source("lib/libraries.r", encoding="UTF-8")
 source("lib/rstudio.r", encoding="UTF-8")
 ```
 
-# Izbira teme
+# Analiza kazalnikov trajnostnega razvoja Slovenije
 
-Za vzorec bomo prikazali nekaj podatkov o slovenskih občinah.
+Za projektno nalogo sem si izbral analizo kazalnikov trajnostnega razvoja Slovenije. Vse podatke, ki sem jih uporabil sem dobil na Statističnem uradu republike Slovenije (SURS).
 
-![](slike/grb.png)
+![](slike/aganda2030.jpg)
 
 ***
 
 # Obdelava, uvoz in čiščenje podatkov
 
 ```{r uvoz, echo=FALSE, message=FALSE}
-source("uvoz/uvoz.r", encoding="UTF-8")
+source("uvoz/uvozi.R", encoding="UTF-8")
 ```
 
-Uvozili smo podatke o občinah v obliki CSV s statističnega urada ter v obliki HTML
-z Wikipedije. Podatke imamo v dveh razpredelnicah v obliki *tidy data*.
+Uvozili smo podatke v obliki CSV s statističnega urada. Podatke imamo v (stevilo) razpredelnicah v obliki *tidy data*.
 
 1. `bdp` - podatki o bdp-ju za Slovenijo
-  - `regija` - spremenljivka: ime regije (neurejen faktor),
-  - `leto` - spremenljivka: opazovano leto
-  - `vrednost` - meritev: BDP [Slovenija vsa leta = 100]
+  - `Regija` - spremenljivka: ime regije,
+  - `Leto` - spremenljivka: opazovano leto
+  - `Vrednost` - meritev: BDP [Slovenija vsa leta = 100]
 
-2. `obcine` - podatki o občinah
-  - `obcina` - spremenljivka: ime občine (neurejen faktor),
-  - `povrsina` - meritev: površina občine v km$^2$ (število),
-  - `prebivalci` - meritev: prebivalstvo občine (število),
-  - `gostota` - meritev: število prebivalcev na km$^2$ (število),
-  - `naselja` - meritev: število naselij v občini (število),
-  - `ustanovitev` - meritev: leto ustanovitve občine (število),
-  - `pokrajina` - meritev: pokrajina, ki ji občina pripada (neurejen faktor),
-  - `regija` - meritev: regija, ki ji občina pripada (neurejen faktor),
-  - `odcepitev` - meritev: podatki o občinah, od katerih se je občina odcepila (besedilo).
-
-**Opomba**: da bi razpredelnica `obcine` res bila v obliki *tidy data*, bi morali odstraniti stolpec `gostota` (saj je izpeljan iz stolpcev `povrsina` in `prebivalci`), podatke o pokrajinah pa bi morali premakniti v drugo razpredelnico, saj nekatere občine pripadajo dvema pokrajinama. Podobno bi morali narediti tudi s stolpcem `odcepitev`.
-
-Spodnji graf prikazuje porazdelitev števila naselij v občinah.
-
-```{r histogram, echo=FALSE, message=FALSE, fig.align='center', fig.cap='Histogram števila naselij v občinah'}
-ggplot(obcine, aes(x=naselja)) + geom_histogram() +
-  ggtitle("Pogostost števila naselij") + xlab("Število naselij") + ylab("Število občin")
-```
+2. `drzavni_dolg` - podatki o državnem dolgu
+  - `Leto` - spremenljivka: opazovano leto,
+  - `Dolg_bdp` - meritev: Državni dolg glede na BDP [%],
+  
+3. `kakovost_zraka` - podatki o kakovosti zraka
+  - `Regija` - spremenljivka: ime regije,
+  - `Leto` - spremenljivka: opazovano leto
+  - `Povprecna koncentracija delcev` - meritev: povprečna letna koncentracija delcev PM10 [µg/m3]
+  - `Dni presezene dnevne koncentracije` - meritev: število dni s preseženo dnevno mejno koncentracijo delcev PM10
+  
+4. `kakovost_vode` - podatki o kakovosti vode
+  - `Oskrbovalno območje` - spremenljivka: velikost oskrbovalnega območja,
+  - `Leto` - spremenljivka: opazovano leto
+  - `Delez_onesnazenostit` - meritev: Delež neskladnih vzorcev zaradi onesnaženosti pitne vode z E.coli [%]  
+  
 
 ***
 
 # Analiza in vizualizacija podatkov
 
 ```{r vizualizacija, echo=FALSE, message=FALSE, warning=FALSE, results='hide'}
-source("vizualizacija/vizualizacija.r", encoding="UTF-8")
+source("vizualizacija/moja_v.R", encoding="UTF-8")
 ```
+
+
+
+```{r drzavni_dolg, echo=FALSE, fig.align='center', fig.cap='Državni dolg Slovenije'}
+drzavni_dolg
+```
+
+```{r bdp_graf, echo=FALSE, fig.align='center', fig.cap='BDP po regijah 2000-2015'}
+bdp_graf
+```
+
+```{r kakovost_zraka_graf, echo=FALSE, fig.align='center', fig.cap='Kakovost zraka po regijah 2000-2015'}
+kakovost_zraka_graf
+```
+
+```{r kakovost_vode_graf, echo=FALSE, fig.align='center', fig.cap='Kakovost vode po regijah 2000-2015'}
+kakovost_vode_graf
+```
+
+
 
 Spodnji zemljevid prikazuje povprečno velikost družine za vsako občino.
 
