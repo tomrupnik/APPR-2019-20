@@ -89,10 +89,10 @@ kakovost_vode_graf
 
 
 
-Spodnji zemljevid prikazuje povprečno velikost družine za vsako občino.
+Spodnji zemljevid prikazuje povprečni BDP po regijah v letih 2000-2015.
 
-```{r zemljevid1, echo=FALSE, fig.align='center', fig.cap='Povprečni BDP po regijah 2000-2015'}
-
+```{r zemljevid1, echo=FALSE, message=FALSE, warning=FALSE,fig.align='center', fig.cap='Povprečni BDP po regijah 2000-2015'}
+zemljevid1
 ```
 
 ***
