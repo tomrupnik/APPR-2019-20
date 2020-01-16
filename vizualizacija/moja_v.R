@@ -12,7 +12,7 @@ kakovost_zraka_graf <- ggplot(kakovost_zraka, aes(x = Leto, y = Povprecna_koncen
   labs(title = "Kakovost zraka po regijah 2000-2015", colour = "Regija")
 
 kakovost_vode_graf <- ggplot(kakovost_vode, aes(x = Leto, y = Delez_onesnazenosti)) + geom_point(aes(colour = factor(Oskrbovalno_obmocje))) +
-  labs(title = "Kakovost zraka po regijah 2000-2015", colour = "Oskrbovalno_obmocje")
+  labs(title = "Kakovost vode po regijah 2000-2015", colour = "Oskrbovalno_obmocje")
 
 
 povprecje.bdp.po.regijah <- bdp %>% group_by(Regija) %>% summarise(Povprecje=sum(Vrednost)/16)
